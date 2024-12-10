@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 1s ease;
+}
+
+.day {
+    background: linear-gradient(to bottom, #87CEEB, #f0e68c); /* Himmelblå til lys gul for dag */
+    color: black;
+}
+
+.night {
+    background: linear-gradient(to bottom, #2c3e50, #34495e); /* Mørk blå til grå for natt */
+    color: white;
+}
+
+.clock-container {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 48px;
+}
+
+#icon {
+    width: 100px; /* Juster bredden */
+    height: 100px; /* Juster høyden */
+    background-size: contain; /* Sørger for at bildet passer inn i elementet */
+    background-repeat: no-repeat; /* Forhindrer gjentakelse av bakgrunnsbildet */
+    display: inline-block; /* Sørger for at det oppfører seg som et blokkelement */
+}
+
+.sun {
+    background-image: url('sol.png'); /* Sett inn stien til solikonet */
+    filter: brightness(1.5); /* Juster lysstyrken for solikonet */
+}
+
+.moon {
+    background-image: url('måne.png'); /* Sett inn stien til måneikonet */
+    filter: brightness(1); /* Juster lysstyrken for måneikonet */
+}
